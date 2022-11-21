@@ -1,0 +1,40 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.dinero {
+
+    padding: v.$separacion 0;
+
+    &__heading {
+        text-align: center;
+        color: v.$secundario;
+    }
+
+    &__grid {
+        align-items: center;
+        @include m.tablet {
+            @include m.grid( 2, 3rem);
+        }
+    }
+
+    &__informacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start
+    }
+
+    &__boton {
+        @include m.boton(v.$primario, v.$blanco);
+        display: inline-block;
+    }
+
+    &__texto {
+        color: v.$secundario;
+        line-height: 1.5;
+        margin-top: 0;
+        // margin: 0;
+    }
+
+
+}

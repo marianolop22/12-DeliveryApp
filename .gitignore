@@ -1,0 +1,9 @@
+node_modules
+build
+www
+platforms
+plugins
+dist
+ios/App/public/
+.history/
+.vscode/
