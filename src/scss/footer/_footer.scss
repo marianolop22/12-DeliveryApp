@@ -32,6 +32,11 @@
 
     &__heading {
         margin: 0 0 2rem 0;
+        text-align: center;
+
+        @include m.tablet {
+            text-align: left;
+        }
     }
 
     &__texto {
@@ -43,6 +48,12 @@
         display: block;
         margin-bottom: 2rem;
 
+        text-align: center;
+
+        @include m.tablet {
+            text-align: left;
+        }
+        
         &:last-of-type {
             margin-bottom: 0;
         }
